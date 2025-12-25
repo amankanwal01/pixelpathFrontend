@@ -1,0 +1,95 @@
+.branding-container {
+  /* border: 2px solid magenta; */
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  margin: 70px auto;
+}
+.name-and-branding {
+  width: 45%;
+  overflow: hidden;
+}
+.h1-p-ctnr h1 {
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+
+.album-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.album {
+  width: 60%;
+  margin: 0 1rem;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.album img {
+  height: 50%;
+  width: 100%;
+}
+.hr-lines hr {
+  margin: 1.25rem 0;
+}
+
+.album p {
+  color: rgb(255, 255, 255);
+}
+
+.album img {
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 1000px) {
+  .album-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .album {
+    /* width: 35%; */
+    margin: 1rem;
+    background-size: contain;
+    border-radius: 5px;
+  }
+  .album-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .album-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .album {
+    /* width: 35%; */
+    margin: 1rem;
+    background-size: contain;
+    border-radius: 5px;
+  }
+  .album-2 {
+    display: flex;
+  }
+  .hr-lines {
+    display: none;
+  }
+  .album p {
+    color: rgb(255, 255, 255);
+    font-size: 0.5rem;
+  }
+  .h1-p-ctnr p {
+    font-size: 0.85rem;
+  }
+  .h1-p-ctnr h1 {
+    font-size: 2.25rem;
+  }
+}

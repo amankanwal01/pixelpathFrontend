@@ -1,0 +1,72 @@
+.image {
+  width: 100%; /* Ensures the image fits its container */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: Smooth corners */
+}
+
+.photo-gallary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; /* Prevents border overflow */
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid mediumseagreen; */
+  transition: all 0.3s ease-in-out;
+}
+
+.image-link {
+  text-decoration: none;
+  color: gray;
+}
+/* Correct hover effect */
+.image-container:hover::before {
+  /* backdrop-filter: blur(5px); */
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: scale(1.5); /* Slight zoom effect */
+}
+
+.image-container div p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.photo-title {
+  color: #404040;
+  /* font-size: 1.2/5rem; */
+  letter-spacing: 0.05rem;
+}
+
+.like-and-save {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-and-save i {
+  margin: 0 0.256rem;
+  /* font-size: 2rem;  */
+}
+.like-and-save {
+  color: #404040;
+}
+
+.like {
+  /* font-size: 1.2rem; */
+}

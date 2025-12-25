@@ -1,0 +1,32 @@
+/* Make the page take full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use flexbox to keep footer at the bottom */
+.main-container {
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Main content takes available space */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center hero content */
+}
+
+/* Footer should always be at the bottom */
+/* .footer {
+  background-color: #1f1f1f;
+  color: #b0b0b0;
+  text-align: center;
+  padding: 20px 0;
+} */

@@ -1,0 +1,14 @@
+.upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.upload-image {
+  width: 40%;
+  background: url("../assets/36681.jpg");
+}
+
+.upload-form {
+  width: 40%;
+}
