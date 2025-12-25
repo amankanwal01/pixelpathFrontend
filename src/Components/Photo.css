@@ -7,8 +7,7 @@
 
   margin: 1rem;
 }
-.photo-btn:hover {
-}
+
 .photo {
   /* background-color: #c3d4d2; */
   width: 50%;
@@ -21,9 +20,6 @@
   justify-content: center;
 }
 
-.photo img {
-  /* width: 100%; */
-}
 .like-and-caption {
   display: flex;
   flex-direction: column;
