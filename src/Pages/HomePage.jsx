@@ -31,7 +31,7 @@ function HomePage() {
         setAllPhotos(response.data);
       } catch (error) {
         console.log(
-          "Error in fetching data form backend , may be server not started ! "
+          "Error in fetching data form backend , may be server not started ! ",
         );
       } finally {
         setLoading(false);
@@ -47,7 +47,7 @@ function HomePage() {
       <Branding />
       <div className="photo-gallary">
         {loading ? (
-          <p>loadding...................</p>
+          <p>Landing...................</p>
         ) : (
           allPhotos.map((photo, i) => {
             return (
